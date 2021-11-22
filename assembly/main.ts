@@ -1,5 +1,5 @@
 import { PostedMessage, messages } from './model';
-
+import { context } from "near-sdk-core";
 // --- contract code goes below
 
 // The maximum number of latest messages the contract returns.

@@ -7,9 +7,11 @@ import { context, u128, PersistentVector } from "near-sdk-as";
 export class PostedMessage {
   premium: boolean;
   sender: string;
+  time:string
   constructor(public text: string) {
     this.premium = context.attachedDeposit >= u128.from('10000000000000000000000');
     this.sender = context.sender;
+    this.time = new Date(context.blockTimestamp/1000000).toString();
   }
 }
 /**

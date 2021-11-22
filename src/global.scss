@@ -116,7 +116,12 @@ button {
 }
 
 .is-premium {
-  border-left: 0.25em solid var(--secondary);
-  padding-left: 0.25em;
-  margin-left: -0.5em;
+  overflow: hidden;
+  padding: 16px 32px;
+  width: 300px;
+  font-family: Quicksand, arial, sans-serif;
+  box-shadow: rgb(0 0 0 / 5%) 0px 0px 20px, rgb(0 0 0 / 8%) 0px 0px 40px;
+  border-radius: 5px;
+  margin: 0px 16px 16px 0px;
+  border-top: 1em solid rgb(21, 4, 252);
 }
